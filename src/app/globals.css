@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@400;500;600;700&family=Caveat:wght@700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-handwriting: "Caveat", cursive;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  /* Quiz Apps Custom Colors */
+  --color-quiz-bg-start: #AFDBF5;
+  --color-quiz-bg-end: #B8D8F0;
+
+  --color-quiz-text-primary: #185C65;
+  /* Dark Teal for Title */
+  --color-quiz-text-secondary: #222222;
+  /* Dark text for questions */
+
+  --color-quiz-option-bg: #DEF2FA;
+  --color-quiz-option-hover: #C5E8F7;
+  --color-quiz-option-border: #E0E0E0;
+
+  --color-quiz-progress-track: #E5E5E5;
+  --color-quiz-progress-filled: #185C65;
+
+  --font-serif: "DM Serif Display", serif;
+  --font-sans: "Inter", sans-serif;
+
+  --animate-scale-in: scale-in 0.2s ease-out;
+
+  @keyframes scale-in {
+    0% {
+      transform: scale(0.95);
+      opacity: 0;
+    }
+
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+}
+
+:root {
+  --background: #AFDBF5;
+  /* Fallback/Start color */
+  --foreground: #171717;
+  --font-serif: "DM Serif Display", serif;
+  --font-sans: "Inter", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #A4D8E8 0%, #D4EBF5 50%, #AECFE6 100%);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-serif);
+}
